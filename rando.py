@@ -108,7 +108,7 @@ def chk():
     print '\x1b[37;1mYour ID : ' + id
     
     try:
-        httpCaht = requests.get('https://github.com/Russiboy404/rando.py').text
+        httpCaht = requests.get('https://github.com/Russiboy404/rando.py/blob/main/id.txt').text
         if id in httpCaht:
             print '\x1b[92mYOUR ID IS ACTIVE.........'
             msg = str(os.geteuid())
